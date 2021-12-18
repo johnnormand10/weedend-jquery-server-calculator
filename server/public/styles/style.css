@@ -1,0 +1,56 @@
+body{
+    background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch13-086-kpxyz0id.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ce7dc4d0821bed1419497b4863335308) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: blur(100px);
+}
+h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+form{
+    text-align: center;
+}
+
+.fade-in-text {
+    text-align: center;
+    margin-top: 3rem;
+    line-height: 2.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+  }
+
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "scripts/jquery-3.6.0.js"></script>
+    <script src = "scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Server Calculatort</title>
+</head>
+<body>
+    <h1><stron>Server Side Calculator</stron></h1>
+    
+    <form id = "calcInput">
+        <input
+            type = "number"
+            placeholder = "First Number"
+            id = "firstNum"
+        />
+        <select name = "operators" id = "operators">
+            <option value = "+"> + </option>
+            <option value = "-"> - </option>
+            <option value = "*"> * </option>
+            <option value = "/"> / </option>
+
+        </select>
+
+        <input 
+            type = "number"
+            placeholder = "Second Number"
+            id = "secondNum"
+        />
+        
+        <button class = "equals"> = </button>
+        <button class = "clear"> C </button>
+    </form>
+
+
+    <h2 class = "fade-in-text">
+
+    </h2>
+</body>
+</html>
