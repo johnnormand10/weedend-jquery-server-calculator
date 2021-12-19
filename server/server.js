@@ -1,5 +1,5 @@
 const express = require('express');
-
+ 
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -35,6 +35,7 @@ app.get('/history', (req, res) =>{
     res.send(storedData);
 })
 
+let total = 0;
 app.post('/calculate', (req, res) =>{
     console.log('in POST /calculate', req.body);//seeing if I am in POST //req.body === newNumObject from client.js
    
@@ -46,11 +47,33 @@ app.post('/calculate', (req, res) =>{
     };
     //taking the inputs and use eval()
     //eval() makes a string with an operator into a mathematical equation
-    let testStr = eval(`${req.body.firstNumber} ${req.body.operator} ${req.body.secondNumber}`);
-    console.log(testStr);
+    if(`${req.body.operator}` === '+'){
+        total = (newObject.firstNum + newObject.secondNum);
+        console.log(total);
+    }
+    else if(`${req.body.operator}` === '-'){
+        total = (newObject.firstNum - newObject.secondNum);
+        console.log(total);
+        
+    }
+    else if(`${req.body.operator}` === '*'){
+        total = (newObject.firstNum * newObject.secondNum);
+        console.log(total);
+        
+    }
+    else if(`${req.body.operator}` === '/'){
+        total = (newObject.firstNum / newObject.secondNum);
+        console.log(total);
+        
+    }
+    
 
-    res.send(`${req.body.firstNumber} ${req.body.operator} ${req.body.secondNumber} = ${testStr}`);
-    let store = (`${req.body.firstNumber} ${req.body.operator} ${req.body.secondNumber} = ${testStr}`)
+    
+    // let testStr = eval(`${req.body.firstNumber} ${req.body.operator} ${req.body.secondNumber}`);
+    // console.log(testStr);
+
+    res.send(`${req.body.firstNumber} ${req.body.operator} ${req.body.secondNumber} = ${total}`);
+    let store = (`${req.body.firstNumber} ${req.body.operator} ${req.body.secondNumber} = ${total}`)
     //storing the equation into an array for later use 
     storedData.push(store);
     console.log('in storedData', storedData);
