@@ -1,9 +1,21 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+weekend-sql-to-do-list
 
-## Description
+## Installation
+1. You need to create a SQL database name weekend-to-do-list
+2. Next use the table data from the database.sql file to create your table
+3. You will now enter some sample data into the table
+4. Run npm install in your terminal and then enter npm start to get the server running
+5. Enter localhost:5000 in your browser to view
 
-Your project description goes here. What problem did you solve? How did you solve it?
+### Built With
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- Bootstrap
+- SQL
+- Express
+- AJAX
